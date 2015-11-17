@@ -1,0 +1,42 @@
+
+
+%Mehtab Kaur
+%Assignment #1
+%Output screen (2)
+
+setscreen ("graphics: 900;600")
+
+%font
+var font: int
+font :=Font.New ("Times New Roman:14")
+
+%Assigning the values to variables
+var l :int := 6
+var h :int := 5 
+var w  :int := 7 
+
+%Displaying how to calculate surface area
+put "Length = ", l, " cm "
+put "Height = ", h, " cm "
+put "Width = ", w, " cm " 
+put ""
+put "Surface Area = 2(Length)(Height)+ 2(Height)(Width) + 2(Length)(Width)"
+put "Surface Area = 2(6)(5) + 2(5)(7) + 2(6)(7)" 
+put "Surface Area = ", 2 *( l )*( h )+ 2 * (h) * (w) + 2 * (l) * (w), " cm**2"
+
+%Displaying where L, W and H are
+locatexy(90, 240)
+put "Height = ",h," cm"
+locatexy(460, 210)
+put "Width = ",w," cm"
+locatexy(350, 400)
+put "Length = ",l," cm"
+
+%Box
+Draw.Box (200,170, 400,300, red)
+Draw.Box (290,250, 490,380, red)
+Draw.Line (200,170, 290, 250, red)
+Draw.Line (200, 300, 290, 380, red)
+Draw.Line (400, 170, 490, 250, red)
+Draw.Line (400, 300, 490, 380, red)
+Enter file contents here
